@@ -9,11 +9,12 @@ import ImageMap from '../../assets/banner/map.png'
 function Dungeon() {
   return (
     <section id='dungeon'>
-      <div className='app__text'>
+      <div className='app__text-dungeon'>
         <span className='image-text'></span>
-      </div>
-      <div className='dungeon'>
         <h4 className='head-text'>Attack Dungeon</h4>
+      </div>
+      <div className='app__dungeon'>
+      <div className='dungeon'>
         <div className='dungeon__select'>
           <Select>
             {zone.map((items, i) => (
@@ -38,6 +39,7 @@ function Dungeon() {
             </div>
           ))}
         </div>
+      </div>
       <figure>
         <img src={ImageMap} alt='Map of Isael World' />
       </figure>

@@ -1,0 +1,43 @@
+#checking {
+  
+  .checking__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    .checking-text {
+      background-image: url(../../assets/buttons/ButtonOn.png);
+      width: 250px;
+      height: 90px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+      letter-spacing: 2px;
+  
+      &::before {
+        content: 'Checking';
+        font-size: 25px;
+        font-weight: 700;
+        color: var(--white);
+        position: absolute;
+        top: 30px;
+        left: 65px;
+      }
+    }
+  }
+
+  .checking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+  }
+}
+
+.text-bastion {
+  
+}

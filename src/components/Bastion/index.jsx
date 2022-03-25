@@ -5,8 +5,8 @@ import './styles.scss'
 function Bastion () {
   return (
     <section id='bastion'>
-      <div className='bastion__text'>
-        <span className='image-text'></span>
+      <div className='app__text-bastion'>
+        <span className='text-bastion'></span>
     </div>
       <BastionFooter />
     </section>
