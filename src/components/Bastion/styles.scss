@@ -1,5 +1,10 @@
 .bastion {
   overflow: hidden;
+
+  .bastion__text {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .bastion__footer {

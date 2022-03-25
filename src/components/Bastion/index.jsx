@@ -1,10 +1,10 @@
-import { BastionHeader, BastionFooter } from './bastion-items'
+import { BastionFooter } from './bastion-items'
 import { AppWrap, MotionWrap } from "../../wrapper"
 import './styles.scss'
 
 function Bastion () {
   return (
-    <section id='app__flex bastion'>
+    <section id='bastion'>
       <div className='bastion__text'>
         <span className='image-text'></span>
     </div>

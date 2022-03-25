@@ -27,14 +27,6 @@ const inputsInquisitors = [
   },
 ]
 
-export const BastionHeader = () => {
-  return (
-    <div className='app__text'>
-      <span className='image-text'></span>
-    </div>
-  )
-}
-
 export const BastionFooter = () => {
   return (
     <div className='bastion__footer'>
