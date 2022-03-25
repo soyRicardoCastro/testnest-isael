@@ -1,23 +1,72 @@
 .bastion {
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
 }
 
 .bastion__footer {
   display: grid;
-  grid-template-columns: min-content max-content;
+  grid-template-columns: 1fr 1fr;
+
+  @media screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+
+    .bastion__img {
+      width: 90%;
+      margin: auto;
+      img {
+        width: 100%;
+        margin: auto;
+      }
+    }
+  }
 
   .bastion__img {
     img {
       width: 70%;
       display: block;
-      margin: auto;
     }
   }
 
   .app__input {
-    display: block;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+
+    .input__bastion {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+
+      @media screen and (max-width: 800px) {
+        display: flex;
+      }
+    }
+
+    .input__inquisitors {
+      margin: 20px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      @media screen and (max-width: 800px) {
+        display: flex;
+      }
+    }
+
+    .input__health {
+      display: grid;
+      grid-template-columns: max-content max-content;
+      gap: 40px;
+      @media screen and (max-width: 800px) {
+        display: flex;
+      }
+    }
   }
 }
 
