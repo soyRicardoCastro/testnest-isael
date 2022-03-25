@@ -4,7 +4,7 @@ import './styles.scss'
 
 function Bastion () {
   return (
-    <section id='bastion'>
+    <section id='app__flex bastion'>
       <div className='bastion__text'>
         <span className='image-text'></span>
     </div>
