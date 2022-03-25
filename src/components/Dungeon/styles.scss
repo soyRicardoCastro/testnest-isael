@@ -1,0 +1,57 @@
+.app__text {
+  display: flex;
+  justify-content: center;
+}
+
+.dungeon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__select {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    
+    &-child {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+  }
+
+  figure {
+    width: 80%;
+    margin: 40px auto;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.image-text {
+  background-image: url(../../assets/buttons/ButtonOn.png);
+  width: 250px;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  letter-spacing: 2px;
+
+  &::before {
+    content: 'Dungeon';
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--white);
+    position: absolute;
+    top: 30px;
+    left: 69px;
+  }
+}
