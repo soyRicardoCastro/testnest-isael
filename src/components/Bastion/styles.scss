@@ -1,0 +1,42 @@
+.bastion {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.bastion__footer {
+  display: grid;
+  grid-template-columns: min-content max-content;
+
+  .bastion__img {
+    img {
+      width: 70%;
+      display: block;
+      margin: auto;
+    }
+  }
+
+  .app__input {
+    display: block;
+  }
+}
+
+.image-text {
+  background-image: url(../../assets/buttons/ButtonOn.png);
+  width: 250px;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  letter-spacing: 2px;
+
+  &::before {
+    content: 'Bastion';
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--white);
+    position: absolute;
+    top: 30px;
+    left: 80px;
+  }
+}

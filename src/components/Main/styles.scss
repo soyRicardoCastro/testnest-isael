@@ -1,0 +1,87 @@
+#mint {
+	.app__text {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+		margin-bottom: 20px;
+
+		h4 {
+			width: 80%;
+			text-align: center;
+		}
+
+		.image-text {
+			background-image: url(../../assets/buttons/ButtonOn.png);
+			width: 250px;
+			height: 90px;
+			background-repeat: no-repeat;
+			background-position: center;
+			position: relative;
+			letter-spacing: 2px;
+
+			&::before {
+				content: 'Mint';
+				font-size: 25px;
+				font-weight: 700;
+				color: var(--white);
+				position: absolute;
+				top: 30px;
+				left: 97px;
+			}
+		}
+	}
+}
+
+.app__mint {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+	@media screen and (max-width: 600px) {
+		flex-direction: column;
+	}
+
+	@media screen and (max-width: 100px) {
+		justify-content: space-between;
+	}
+}
+
+.app__cta {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-evenly;
+
+	.selects {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		place-self: center;
+		gap: 25px;
+
+		@media screen and (max-width: 600px) {
+			place-self: center;
+		}
+	}
+
+	.group__buttons {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 10px;
+
+		@media screen and (max-width: 600px) {
+			grid-template-columns: 1fr;
+		}
+	}
+}
+
+.app__image {
+	@media screen and (max-width: 600px) {
+		display: block;
+			margin: 20px auto 0;
+			width: 75%;
+	}
+
+}
+

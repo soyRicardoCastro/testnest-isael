@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --font-base: 'Gideon Roman', Arial, sans-serif;
+  /* --font-base: 'Poppins', sans-serif; */
+  --white: #e1e1e1;
+  --primary-color: #fff;
+  --secondary-color: #ff8e00;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  font-family: var(--font-base);
+  color: var(--white);
+}
+
+body {
+  background: url('./assets/bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  margin: 40px auto;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
