@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
 :root {
   --font-base: 'Gideon Roman', Arial, sans-serif;
-  /* --font-base: 'Poppins', sans-serif; */
   --white: #e1e1e1;
   --primary-color: #fff;
   --secondary-color: #ff8e00;
