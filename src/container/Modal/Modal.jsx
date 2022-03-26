@@ -41,6 +41,7 @@ const Overlay = styled.div`
 	width: 100vw;
 	height: 100vh;
 	position: fixed;
+	overflow: hidden;
 	top: 0;
 	left: 0;
 	background: ${props => props.mostrarOverlay ? 'rgba(0,0,0,.5)' : 'rgba(0,0,0,0)'};
