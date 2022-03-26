@@ -73,12 +73,14 @@ figure {
   }
 
   img {
+    z-index: -1;
     animation: float 3s linear infinite;
     width: 100%;
   }
 }
 
 .image-text {
+  z-index: -1;
   background-image: url(../../assets/buttons/ButtonOn.png);
   width: 250px;
   height: 90px;

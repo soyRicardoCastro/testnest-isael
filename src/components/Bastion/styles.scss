@@ -8,6 +8,7 @@
     align-items:center;
 
     .text-bastion {
+      z-index: -1;
       background-image: url(../../assets/buttons/ButtonOn.png);
       width: 250px;
       height: 90px;
@@ -80,6 +81,7 @@
 
   .bastion__img {
     img {
+      z-index: -1;
       animation: float 3s linear infinite;
       width: 70%;
       display: block;

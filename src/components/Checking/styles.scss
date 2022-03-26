@@ -1,11 +1,11 @@
 #checking {
- 
   .checking__text {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 200px;
     .checking-text {
+      z-index: -1;
       background-image: url(../../assets/buttons/ButtonOn.png);
       width: 250px;
       height: 90px;
@@ -37,8 +37,4 @@
       gap: 20px;
     }
   }
-}
-
-.text-bastion {
-  
 }

@@ -40,7 +40,7 @@ export default function Navbar () {
             <ul className="app__navbar-link">
               {links.map(item => (
                 <li key={item.name}>
-                  <a href={item.path}>{item.name}</a>
+                  <a className='nav-image' href={item.path}>{item.name}</a>
                 </li>
               ))}
             </ul>

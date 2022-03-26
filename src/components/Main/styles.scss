@@ -6,6 +6,7 @@
 		gap: 20px;
 		align-items: center;
 		margin-bottom: 20px;
+		z-index: -1;
 
 		.instruction-mint {
 			width: 80%;
@@ -24,6 +25,7 @@
 		}
 
 		.image-text {
+    	z-index: -1;
 			background-image: url(../../assets/buttons/ButtonOn.png);
 			width: 240px;
 			height: 70px;
@@ -91,6 +93,7 @@
 
 .app__image {
 	animation: float 3s linear infinite;
+	z-index: -1;
 	@media screen and (max-width: 600px) {
 		display: block;
 			margin: 20px auto 0;
