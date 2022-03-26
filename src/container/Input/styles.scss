@@ -21,6 +21,11 @@ $radius: 0.5rem;
   height: 2.5rem;
   margin-bottom: 10px;
 
+  @media screen and (min-width: 1000px) {
+    width: 90%;
+    height: 3rem;
+  }
+
   &__input {
     position: absolute;
     top: 0;
@@ -35,6 +40,10 @@ $radius: 0.5rem;
     outline: none;
     padding: 1.25rem;
     background: none;
+
+    @media screen and (min-width: 1000px) {
+      font-size: 16px;
+    }
 
     &:hover {
       border-color: $clr-primary-light;
@@ -54,7 +63,7 @@ $radius: 0.5rem;
     cursor: text;
     transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
     background-color: $clr-bg;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 

@@ -1,5 +1,5 @@
 #checking {
-  
+ 
   .checking__text {
     display: flex;
     justify-content: center;
@@ -11,17 +11,18 @@
       height: 90px;
       background-repeat: no-repeat;
       background-position: center;
+      background-size: cover;
       position: relative;
       letter-spacing: 2px;
   
       &::before {
         content: 'Checking';
-        font-size: 25px;
+        font-size: 33px;
         font-weight: 700;
         color: var(--white);
         position: absolute;
-        top: 30px;
-        left: 65px;
+        top: 27px;
+        left: 47px;
       }
     }
   }

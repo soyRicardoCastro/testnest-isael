@@ -47,8 +47,8 @@ export const BastionFooter = () => {
           <MainButton text='Add Inquisitors' icon={<AiOutlineUserAdd color='#ff8e00' size={24} />} />
         </div>
         <div className='input__health'>
-          <Input id='checkBastionHealthID' label='Token id of Bastion' />
-          <MainButton color='#1dcc1b' text='Check Bastion Health' icon={<MdHealthAndSafety color='#1dcc1b' size={24} />} />
+          <Input id='checkBastionHealthID' label='Token Bastion' />
+          <MainButton color='#1dcc1b' text='Bastion Health' icon={<MdHealthAndSafety color='#1dcc1b' size={24} />} />
         </div>
       </div>
   </div>

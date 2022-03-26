@@ -7,6 +7,9 @@ function Bastion () {
     <section id='bastion'>
       <div className='app__text-bastion'>
         <span className='text-bastion'></span>
+        <h4 className='instruction-mint'>
+          IN ORDER TO BUY NFT'S YOU WILL NEED TO APPROVE THE REQUESTED AMOUNT OF USDT IN YOUR WALLET
+        </h4>
     </div>
       <BastionFooter />
     </section>

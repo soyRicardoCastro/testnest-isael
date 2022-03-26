@@ -9,7 +9,6 @@
   background: rgba(0,0,0,.5);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(0,0,0, 0.18);
   position: fixed;
   z-index: 2;
 }
@@ -18,20 +17,22 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-left: 25px;
 
-  img {
-    width: 50px;
-    height: 50px;
+    h3 {
+      font-size: 25px;
+      
+      @media screen and (max-width: 800px) {
+        font-size: 20px;
+      }
 
-    @media screen and (min-width: 2000px) {
-      width: 180px;
-      height: 40px;
+      @media screen and (min-width: 1000px) {
+        font-size: 29px;
+      }
     }
-  }
 }
 
 .app__navbar-links {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +41,6 @@
   li {
     margin: 0 1rem;
     cursor: pointer;
-
     flex-direction: column;
 
     div {
@@ -55,12 +55,17 @@
       color: var(--white);
       text-decoration: none;
       flex-direction: column;
+      font-size: 16px;
       text-transform: uppercase;
       font-weight: 500;
       transition: all 0.3s ease-in-out;
 
       &:hover {
         color: var(--secondary-color);
+      }
+
+      @media screen and (min-width: 1000px) {
+        font-size: 19px;
       }
     }
 

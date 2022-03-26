@@ -16,8 +16,12 @@ select {
    font-family: inherit;
    margin: 15px 0;
    &::-ms-expand {
-   	display: none;
+      display: none;
 	}
+
+   @media screen and (min-width: 1000px) {
+      font-size: 1.1em;
+   }
 }
 
 .select {
@@ -31,19 +35,24 @@ select {
    overflow: hidden;
    border-radius: 1em;
 
+   @media screen and (min-width: 1000px) {
+      width: 11em;
+      font-size: 20px;
+   }
+
    &::after {
-   	content: '\25BC';
-	  position: absolute;
-	  top: 0;
-	  right: 0;
-	  padding: 0 1em;
-	  background: #2b2e2e;
-	  cursor:pointer;
-	  pointer-events:none;
-	  transition:.25s all ease;
+   content: '\25BC';
+   position: absolute;
+   top: 0;
+   right: 0;
+   padding: 0 1em;
+   background: #2b2e2e;
+   cursor:pointer;
+   pointer-events:none;
+   transition:.25s all ease;
    }
 
    &:hover::after {
-   	color: #ff8e00;
+      color: #ff8e00;
    }
 }

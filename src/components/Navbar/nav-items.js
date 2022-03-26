@@ -1,5 +1,9 @@
 export const links = [
   {
+    name: 'Home',
+    path: '#home'
+  },
+  {
     name: 'Mint',
     path: '#mint'
   },

@@ -7,7 +7,7 @@ function SocialMedia() {
       <div>
         <a
           target='_blank'
-          href='https://google.com'
+          href='https://twitter.com/projectISAEL'
           rel='noreferrer'>
           <BsTwitter />
         </a>
@@ -15,7 +15,7 @@ function SocialMedia() {
       <div>
         <a
           target='_blank'
-          href='https://google.com'
+          href='https://discord.com/invite/4pXagsxbcb'
           rel='noreferrer'>
           <FaDiscord />
         </a>
@@ -23,7 +23,7 @@ function SocialMedia() {
       <div>
         <a
           target='_blank'
-          href='https://google.com'
+          href='https://www.instagram.com/projectisaelofficial/'
           rel='noreferrer'>
             <BsInstagram />
         </a>
@@ -31,7 +31,7 @@ function SocialMedia() {
       <div>
         <a
           target='_blank'
-          href='https://google.com'
+          href='https://t.me/+wF8jz10mWy4xNjIx'
           rel='noreferrer'>
           <BsTelegram />
         </a>

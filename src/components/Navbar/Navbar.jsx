@@ -12,7 +12,7 @@ export default function Navbar () {
       <div className='app__navbar-logo'>
         <h3>
         <div />
-          Project: Isael Tesnet
+          Project: Isael Testnet
         </h3>
       </div>
       <ul className='app__navbar-links'>

@@ -10,6 +10,7 @@ import BannerMint from '../../assets/banner/icon_banner.png'
 import { BsBoxSeam } from 'react-icons/bs'
 import './styles.scss'
 import Modal from '../../container/Modal/Modal'
+import Loader from '../../container/Loader'
 
 function Main () {
   const [modal, setModal] = useState(false)
@@ -20,7 +21,7 @@ function Main () {
     <section id='mint'>
       <div className='app__text'>
         <span className='image-text'></span>
-        <h4 className='bold-text'>
+        <h4 className='instruction-mint'>
           IN ORDER TO BUY NFT'S YOU WILL NEED TO APPROVE THE REQUESTED AMOUNT OF USDT IN YOUR WALLET
         </h4>
       </div>
@@ -62,18 +63,19 @@ function Main () {
           />
         </div>
 
-         {/* Modal  */}
         <Modal
           estado={modal}
           cambiarEstado={setModal}
-          titulo='Mintear'
+          titulo='Mint'
           mostrarHeader={true}
           mostrarOverlay={true}
           posicionModal={'center'}
           padding={'20px'}
         >
           <Contenido>
-            <h1 className='head-text'>Titulo</h1>
+            <h1 className='head-text'>Inquisitor / Banner</h1>
+            <p className='bold-text'>IN ORDER TO BUY NFT'S YOU WILL NEED TO APPROVE THE REQUESTED AMOUNT OF USDT IN YOUR WALLET</p>
+            <Loader />
           </Contenido>
         </Modal>
 
@@ -95,4 +97,8 @@ const Contenido = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+  h1, p {
+    margin-bottom: 50px;
+  }
 `

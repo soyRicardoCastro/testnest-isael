@@ -7,15 +7,27 @@
 		align-items: center;
 		margin-bottom: 20px;
 
-		h4 {
+		.instruction-mint {
 			width: 80%;
+			font-size: 20px;
 			text-align: center;
+			line-height: 1.8;
+
+			@media screen and (min-width: 1000px) {
+				width: 70%;
+				font-size: 22px;
+			}
+
+			@media screen and (max-width: 800px) {
+				width: 100%;
+			}
 		}
 
 		.image-text {
 			background-image: url(../../assets/buttons/ButtonOn.png);
-			width: 250px;
-			height: 90px;
+			width: 240px;
+			height: 70px;
+			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
 			position: relative;
@@ -23,12 +35,12 @@
 
 			&::before {
 				content: 'Mint';
-				font-size: 25px;
+				font-size: 36px;
 				font-weight: 700;
 				color: var(--white);
 				position: absolute;
-				top: 30px;
-				left: 97px;
+				top: 16px;
+				left: 77px;
 			}
 		}
 	}
@@ -53,6 +65,7 @@
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: space-evenly;
+	width: 70%;
 
 	.selects {
 		display: grid;
@@ -68,7 +81,7 @@
 	.group__buttons {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		gap: 10px;
+		gap: 20px;
 
 		@media screen and (max-width: 600px) {
 			grid-template-columns: 1fr;
@@ -77,11 +90,16 @@
 }
 
 .app__image {
+	animation: float 3s linear infinite;
 	@media screen and (max-width: 600px) {
 		display: block;
 			margin: 20px auto 0;
 			width: 75%;
 	}
 
+	@media screen and (min-width: 1000px) {
+		width: 45%;
+		margin: 0 0 0 120px;
+	}
 }
 
