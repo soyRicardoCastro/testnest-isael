@@ -44,16 +44,22 @@ export const DungeonBastion = [
   {
     label: 'Attack Zone',
     icon: <GiBroadsword color='rgb(225 15 15)' size={24} />,
-    color: 'rgb(225 15 15)'
+    color: 'rgb(225 15 15)',
+    idInput: 'bastionId',
+    idButton: 'attackZone'
   },
   {
     label: 'Heal Bastion',
     icon: <MdHealthAndSafety color='#1dcc1b' size={24} />,
-    color: '#1dcc1b'
+    color: '#1dcc1b',
+    idInput: 'healBastionId',
+    idButton: 'healBastion'
   },
   {
     label: 'Burn Bastion',
     icon: <AiFillFire color='#f04005' size={24} />,
-    color: '#f04005'
+    color: '#f04005',
+    idInput: 'tokenIdofBastionToBurn',
+    idButton: 'burnBastion'
   },
 ]

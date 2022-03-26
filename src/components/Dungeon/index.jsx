@@ -16,14 +16,14 @@ function Dungeon() {
       <div className='app__dungeon'>
       <div className='dungeon'>
         <div className='dungeon__select'>
-          <Select>
+          <Select id='Zone'>
             {zone.map((items, i) => (
               <option key={i} value={items.num}>
                 {items.label}
               </option>
             ))}
           </Select>
-          <Select>
+          <Select id='mob'>
             {mob.map((items, i) => (
               <option value={items.num} key={i}>
                 {items.label}
@@ -34,8 +34,8 @@ function Dungeon() {
         <div className='dungeon__input'>
           {DungeonBastion.map((items, i) => (
             <div key={i} className='dungeon__input-child'>
-              <Input label='Token Bastion' />
-              <MainButton icon={items.icon} color={items.color} text={items.label} />
+              <Input id={items.idInput} label='Token Bastion' />
+              <MainButton id={items.idButton} icon={items.icon} color={items.color} text={items.label} />
             </div>
           ))}
         </div>

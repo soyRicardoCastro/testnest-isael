@@ -29,7 +29,7 @@ function Main () {
       <div className='app__mint'>
         <div className="app__cta">
         <div className='selects'>
-          <Select>
+          <Select id='mintType'>
           {avatar.map((item, i) => (
             <option value={item.num} key={i}>
               {item.label}
@@ -37,7 +37,7 @@ function Main () {
           ))}
           </Select>
 
-          <Select>
+          <Select id='boxMints'>
             {box.map((item, i) => (
               <option value={item.num} key={i}>
                 {item.num} Box
@@ -46,18 +46,21 @@ function Main () {
           </Select>
         </div>
         <div className="group__buttons">
-          <MainButton 
+          <MainButton
+            id='mint' 
             text='Mint'
             icon={<BsBoxSeam size={24} color='rgb(225 15 15)' />}
             color='rgb(225 15 15)'
             onClick={toggle}
           />
           <MainButton 
+            id='NoApprove'
             text='Approve USDT'
             icon={<Theter/>}
             color='rgb(83 174 148)'
           />
           <MainButton
+            id='aproveAll'
             text='Aprove NFTs'
             icon={<Metamask/>}
           />
